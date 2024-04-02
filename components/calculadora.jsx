@@ -15,7 +15,6 @@ const [valorACalcular, setValorACalcular] = useState('')
     const handleCalcular = () => {
         try{
             const result = eval(valorACalcular)
-            console.log(result)
             setValorACalcular(result)
         }catch(err){
             setValorACalcular('ERRO')
